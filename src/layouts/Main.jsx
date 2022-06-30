@@ -16,7 +16,7 @@ export default function Main() {
                 </div>
                 <div className="flex items-center text-gray-400 bg-slate-800 px-5 py-2.5 rounded">
                     {/* <input type="date" name="date" id="date" /> */}
-                   <i class="fa fa-calendar mr-2" aria-hidden="true"></i> 24 Mar 2019 - 24 Mar 2019 <i class="fa fa-angle-down ml-2" aria-hidden="true"></i> 
+                   <i className="fa fa-calendar mr-2" aria-hidden="true"></i> 24 Mar 2019 - 24 Mar 2019 <i className="fa fa-angle-down ml-2" aria-hidden="true"></i> 
                 </div>
             </div>
         </div>
@@ -24,9 +24,9 @@ export default function Main() {
         <div className="h-[80%] overflow-auto no-scrollbar border-t m-9 border-zinc-800 pt-5">
             <div className="flex justify-between my-2">
               <Business card_heading="Orders" card_val="932.00" card_icon= {[<i className="fas fa-lightbulb fa-lg fa-xl"></i>]} status="Completed" status_val="5443" />
-              <Business card_heading="Unique Visitors" card_val="756,00" card_icon={[<i class="fa fa-user-circle fa-xl" aria-hidden="true"></i>]} status="Increased since yesterday" status_val="50%" />
-              <Business card_heading="Impressions" card_val="100,38" card_icon={[<i class="fa-solid fa-eye fa-xl"></i>]} status="Increased since yesterday" status_val="35%" />
-              <Business card_heading="Followers" card_val="4250k" card_icon={[<i class="fa-solid fa-eye fa-xl"></i>]} status="Decreased since yesterday" status_val="25%" />
+              <Business card_heading="Unique Visitors" card_val="756,00" card_icon={[<i className="fa fa-user-circle fa-xl" aria-hidden="true"></i>]} status="Increased since yesterday" status_val="50%" />
+              <Business card_heading="Impressions" card_val="100,38" card_icon={[<i className="fa-solid fa-eye fa-xl"></i>]} status="Increased since yesterday" status_val="35%" />
+              <Business card_heading="Followers" card_val="4250k" card_icon={[<i className="fa-solid fa-eye fa-xl"></i>]} status="Decreased since yesterday" status_val="25%" />
             </div>
             
             <div className="bg-slate-800 text-white pb-4">
@@ -38,7 +38,7 @@ export default function Main() {
               <div className="mx-8 flex items-center gap-12">
                   <div className="flex items-center justify-between w-[25%]">
                     <span className="text-xs">Total Profit</span>
-                    <span className="text-green-500"><i class="fa fa-arrow-up" aria-hidden="true"></i> 2.95%</span>
+                    <span className="text-green-500"><i className="fa fa-arrow-up" aria-hidden="true"></i> 2.95%</span>
                   </div>
                 
                 <div className="flex items-center justify-between w-[75%]">
@@ -53,8 +53,8 @@ export default function Main() {
               </div>
               <div className="flex justify-between mx-8">
                 <span className="text-lg font-bold text-white">$92556</span>
-                <span className="text-sm font-medium mt-2"><i class="far fa-dot-circle fa-sm fa-fw text-purple-800 mx-1"></i> Demand
-                <i class="far fa-dot-circle fa-sm fa-fw text-pink-500 mx-1"></i> Supply
+                <span className="text-sm font-medium mt-2"><i className="far fa-dot-circle fa-sm fa-fw text-purple-800 mx-1"></i> Demand
+                <i className="far fa-dot-circle fa-sm fa-fw text-pink-500 mx-1"></i> Supply
                 </span>
               </div>
 

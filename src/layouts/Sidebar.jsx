@@ -12,17 +12,17 @@ const ListItemsMain = [
 const ListItemsUIFeatures = [
     {img:<i className="fa fa-dashboard" aria-hidden="true"></i>, title: "Basic UI Elements"},
     {img:<i className="fa-brands fa-delicious"></i>, title:"Advanced UI"},
-    {img: <i class="fa fa-bell-slash" aria-hidden="true"></i>, title:"Notifications"},
-    {img:<i class="fa-solid fa-compact-disc"></i>, title:"Icons"},
-    {img:<i class="fa fa-anchor" aria-hidden="true"></i> , title:"Form elements"}
+    {img: <i className="fa fa-bell-slash" aria-hidden="true"></i>, title:"Notifications"},
+    {img:<i className="fa-solid fa-compact-disc"></i>, title:"Icons"},
+    {img:<i className="fa fa-anchor" aria-hidden="true"></i> , title:"Form elements"}
 
 ]
 const ListItemsDataRepresentaion = [
     {img:<i className="fa fa-dashboard" aria-hidden="true"></i>, title: "Basic UI Elements"},
     {img:<i className="fa-brands fa-delicious"></i>, title:"Advanced UI"},
-    {img: <i class="fa fa-bell-slash" aria-hidden="true"></i>, title:"Notifications"},
-    {img:<i class="fa-solid fa-compact-disc"></i>, title:"Icons"},
-    {img:<i class="fa fa-anchor" aria-hidden="true"></i> , title:"Form elements"}
+    {img: <i className="fa fa-bell-slash" aria-hidden="true"></i>, title:"Notifications"},
+    {img:<i className="fa-solid fa-compact-disc"></i>, title:"Icons"},
+    {img:<i className="fa fa-anchor" aria-hidden="true"></i> , title:"Form elements"}
 
 ]
 const ListItemsEditors = [
