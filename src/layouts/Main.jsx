@@ -21,8 +21,11 @@ export default function Main() {
         </div>
 
         <div className="h-[80%] overflow-auto no-scrollbar border-t m-9 border-zinc-800 pt-5">
-            <div className="flex gap-5">
-              <Business />
+            <div className="flex justify-between">
+              <Business card_heading="Orders" card_val="932.00" card_icon= {[<i className="fas fa-lightbulb fa-lg fa-xl"></i>]} status="Completed" status_val="5443" />
+              <Business card_heading="Unique Visitors" card_val="756,00" card_icon={[<i class="fa fa-user-circle fa-xl" aria-hidden="true"></i>]} status="Increased since yesterday" status_val="50%" />
+              <Business card_heading="Impressions" card_val="100,38" card_icon={[<i class="fa-solid fa-eye fa-xl"></i>]} status="Increased since yesterday" status_val="35%" />
+              <Business card_heading="Followers" card_val="4250k" card_icon={[<i class="fa-solid fa-eye fa-xl"></i>]} status="Decreased since yesterday" status_val="25%" />
             </div>
 
             
