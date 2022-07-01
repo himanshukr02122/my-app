@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from 'react-router-dom'
 
 
-const PageMainContent = ()=> {
+const PageMainContent = (props)=> {
     return (
         <>
         <div className="flex justify-between m-9 mb-5">
@@ -20,11 +20,11 @@ const PageMainContent = ()=> {
             </div>
             </div>
 
-            <ul className="text-white flex mx-9 gap-10 border-b pb-2 mb-4 border-neutral-800">
-                <li> <Link to="/">Users</Link> </li>
-                <li> <Link to="/business">Business</Link> </li>
-                <li> <Link to="/">Performance</Link> </li>
-                <li> <Link to="/">Conversion</Link> </li>
+            <ul className="text-white flex mx-9 gap-2 border-b mb-4 h-8 border-neutral-800">
+                <li className="pr-4"> <Link to="/">Users</Link> </li>
+                <li className="px-4" style={props.style}> <Link to="/business" >Business</Link> </li>
+                <li className="px-4"> <Link to="/">Performance</Link> </li>
+                <li className="px-4"> <Link to="/">Conversion</Link> </li>
             </ul>
 
         </>

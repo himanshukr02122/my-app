@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import Kebab_Icon from '../assets/icons/more.png';
 import Layout from '../layouts';
 import PageMainContent from './PageMainContent';
+const styles = {
+  borderBottom:"2px solid #00FF00"
+}
+
 
 const BusinessChild= (props)=> {
     return (
@@ -23,7 +27,7 @@ export default class Business extends Component {
         <Layout>
           <section className="h-[100%] container mx-auto bg-zinc-900">
 
-            <PageMainContent />
+            <PageMainContent style={styles} />
 
             <div className="overflow-auto no-scrollbar h-[75%] mx-9">
               <div className="flex justify-between my-2">
@@ -56,11 +60,12 @@ export default class Business extends Component {
                   </div>
                 </div>
                 <div className="flex justify-between mx-8">
-                  <span className="text-lg font-bold text-white">$92556</span>
+                  <span className="text-lg font-bold text-white">$ 92556</span>
                   <span className="text-sm font-medium mt-2"><i className="far fa-dot-circle fa-sm fa-fw text-purple-800 mx-1"></i> Demand
                   <i className="far fa-dot-circle fa-sm fa-fw text-pink-500 mx-1"></i> Supply
                   </span>
                 </div>
+                
               </div>
             </div>
           
