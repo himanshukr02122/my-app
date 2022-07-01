@@ -5,9 +5,9 @@ import {
   Route
 } from 'react-router-dom';
 
-import Business from "../components/Business";
+import ContentSection from "../containers";
 // import Layout from "../layouts";
-import Main from "../components";
+import Business from "../containers/business";
 
 
 
@@ -16,7 +16,7 @@ const AppRoutes =()=> {
         <Suspense>
           <Router>
             <Routes>
-                <Route  element={<Main />} path="/" exact={true} />
+                <Route  element={<ContentSection />} path="/" exact={true} />
                 <Route  element={<Business />} path="/business" exact={true} />
                 
             

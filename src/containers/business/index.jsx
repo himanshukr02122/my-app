@@ -1,24 +1,14 @@
 import React, { Component } from 'react'
-import Kebab_Icon from '../assets/icons/more.png';
-import Layout from '../layouts';
-import PageMainContent from './PageMainContent';
+import Kebab_Icon from '../../assets/icons/more.png';
+import Layout from '../../layouts';
+import MainPageContent from '../../components';
+import BusinessChild from '../../components/business/businessCards';
+
 const styles = {
   borderBottom:"2px solid #00FF00"
 }
 
 
-const BusinessChild= (props)=> {
-    return (
-      <div className="font-bold flex gap-2 text-white bg-slate-800 flex-col items-center justify-center w-60 h-96 p-8 ">
-        <h4 className="font-medium">{props.card_heading}</h4>
-        <span className="text-2xl">{props.card_val}</span>
-        <div className="rounded-full w-24 h-24 my-6 border-4 flex justify-center items-center">
-          {props.card_icon}
-        </div>
-        <span className="text-sm font-medium text-center">{props.status}</span>
-        <span className="text-xl">{props.status_val}</span>
-      </div>
-  )}
 
 export default class Business extends Component {
     
@@ -27,7 +17,7 @@ export default class Business extends Component {
         <Layout>
           <section className="h-[100%] container mx-auto bg-zinc-900">
 
-            <PageMainContent style={styles} />
+            <MainPageContent style={styles} />
 
             <div className="overflow-auto no-scrollbar h-[75%] mx-9">
               <div className="flex justify-between my-2">
