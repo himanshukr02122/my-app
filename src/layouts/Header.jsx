@@ -6,7 +6,7 @@ import England_Flag from '../assets/icons/englandFlag.jpg';
 
 export default function Header() {
   return (
-    <div className="container-fluid w-full h-[10%] bg-slate-800 flex">
+    <header className="container-fluid w-full h-[10%] bg-slate-800 flex">
       <div className="w-1/5 h-full text-white flex justify-center items-center  ">
         <img src={Connect_Plus_logo} alt="logo" width="32" className="bg-gray-200" />
         <h1 className="font-bold ml-2 ">Connect Plus</h1>
@@ -37,6 +37,6 @@ export default function Header() {
           </ul>
       </div>
       
-    </div>
+    </header>
   )
 }
