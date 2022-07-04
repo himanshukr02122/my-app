@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
 import Kebab_Icon from '../../assets/icons/more.png';
 import Layout from '../../layout';
-import MainPageContent from '../../components/mainPageContent';
+import { MainPageContent } from '../dashboard';
 import BusinessChild from '../../components/business/businessCards';
 
 const styles = {
   borderBottom:"2px solid #00FF00"
 }
-
-
 
 export default class Business extends Component {
     

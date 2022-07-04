@@ -1,7 +1,6 @@
 import React from 'react'
 import '../index.css';
 
-
 const ListItemsMain = [
     {img:'fa fa-dashboard', title: "Dashboard"},
     {img:'fa-brands fa-delicious', title:"RTL"},
@@ -30,8 +29,7 @@ const ListItemsEditors = [
 ]
 export default function Sidebar() {
   
-    return (
-        
+    return (      
     <div 
         className="overflow-auto border border-gray-800 no-scrollbar font-medium w-64 h-[91vh] mt-[9vh] pt-4 pl-2 lg:w-80 lg:pl-4 xl:pl-8 text-gray-400 bg-gray-800">
         <h3 className="text-sm xl:text-base m-2">Main</h3>
