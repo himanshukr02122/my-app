@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './Header'
-import Sidebar from './Sidebar'
+import Header from './header'
+import Sidebar from './sidebar'
 
 
 const Layout=({children})=> {
@@ -9,7 +9,7 @@ const Layout=({children})=> {
       <>
 
         <Header />
-        <main className="flex h-[90%]">
+        <main className="flex h-full">
           <Sidebar />
           {children}
         </main>

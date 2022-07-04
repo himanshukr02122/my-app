@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Kebab_Icon from '../../assets/icons/more.png';
-import Layout from '../../layouts';
+import Layout from '../../layout';
 import MainPageContent from '../../components';
 import BusinessChild from '../../components/business/businessCards';
 
@@ -15,12 +15,12 @@ export default class Business extends Component {
     render() {
       return (
         <Layout>
-          <section className="h-[100%] container mx-auto bg-zinc-900">
+          <section className="w-full pt-16 bg-zinc-900">
 
             <MainPageContent style={styles} />
 
             <div className="overflow-auto no-scrollbar h-[75%] mx-9">
-              <div className="flex justify-between my-2">
+              <div className="grid grid-cols-4 gap-5 my-2">
                 <BusinessChild card_heading="Orders" card_val="932.00" card_icon= {[<i className="fas fa-lightbulb fa-lg fa-xl"></i>]} status="Completed" status_val="5443" />
                 <BusinessChild card_heading="Unique Visitors" card_val="756,00" card_icon={[<i className="fa fa-user-circle fa-xl" aria-hidden="true"></i>]} status="Increased since yesterday" status_val="50%" />
                 <BusinessChild card_heading="Impressions" card_val="100,38" card_icon={[<i className="fa-solid fa-eye fa-xl"></i>]} status="Increased since yesterday" status_val="35%" />
