@@ -1,28 +1,27 @@
 import React from 'react'
-import Application_Icon from '../assets/icons/application.png'
 import '../index.css';
 
 
 const ListItemsMain = [
-    {img:<i className="fa fa-dashboard" aria-hidden="true"></i>, title: "Dashboard"},
-    {img:<i className="fa-brands fa-delicious"></i>, title:"RTL"},
-    {img:<i className="fa-brands fa-delicious"></i>, title:"Widgets"},
-    {img: <img src={Application_Icon} alt="icon" width="16" />, title:"Applications"}
+    {img:'fa fa-dashboard', title: "Dashboard"},
+    {img:'fa-brands fa-delicious', title:"RTL"},
+    {img:'fa-brands fa-delicious', title:"Widgets"},
+    {img:'fa fa-asterisk', title:"Applications"}
 ]
 const ListItemsUIFeatures = [
-    {img:<i className="fa fa-dashboard" aria-hidden="true"></i>, title: "Basic UI Elements"},
-    {img:<i className="fa-brands fa-delicious"></i>, title:"Advanced UI"},
-    {img:<i className="fa fa-bell-slash" aria-hidden="true"></i>, title:"Notifications"},
-    {img:<i className="fa-solid fa-compact-disc"></i>, title:"Icons"},
-    {img:<i className="fa fa-anchor" aria-hidden="true"></i> , title:"Form elements"}
+    {img:'fa fa-dashboard', title: "Basic UI Elements"},
+    {img:'fa-brands fa-delicious', title:"Advanced UI"},
+    {img:'fa fa-bell-slash', title:"Notifications"},
+    {img:'fa-solid fa-compact-disc', title:"Icons"},
+    {img:'fa fa-anchor', title:"Form elements"}
 
 ]
 const ListItemsDataRepresentaion = [
-    {img:<i className="fa fa-dashboard" aria-hidden="true"></i>, title: "Basic UI Elements"},
-    {img:<i className="fa-brands fa-delicious"></i>, title:"Advanced UI"},
-    {img:<i className="fa fa-bell-slash" aria-hidden="true"></i>, title:"Notifications"},
-    {img:<i className="fa-solid fa-compact-disc"></i>, title:"Icons"},
-    {img:<i className="fa fa-anchor" aria-hidden="true"></i> , title:"Form elements"}
+    {img:'fa fa-dashboard', title: "Basic UI Elements"},
+    {img:'fa-brands fa-delicious', title:"Advanced UI"},
+    {img:'fa fa-bell-slash', title:"Notifications"},
+    {img:'fa-solid fa-compact-disc', title:"Icons"},
+    {img:'fa fa-anchor' , title:"Form elements"}
 
 ]
 const ListItemsEditors = [
@@ -34,14 +33,14 @@ export default function Sidebar() {
     return (
         
     <div 
-        className="overflow-auto border border-slate-800 no-scrollbar font-medium w-64 h-[91vh] mt-[9vh] pt-4 pl-2 lg:w-80 lg:pl-4 xl:pl-8 text-gray-400 bg-slate-800">
+        className="overflow-auto border border-gray-800 no-scrollbar font-medium w-64 h-[91vh] mt-[9vh] pt-4 pl-2 lg:w-80 lg:pl-4 xl:pl-8 text-gray-400 bg-gray-800">
         <h3 className="text-sm xl:text-base m-2">Main</h3>
         <ul className="my-3 mb-6">
             {ListItemsMain.map((ListItem)=> 
              (<li key={ListItem.title} className="m-2 mt-4 text-base xl:text-xl flex items-center gap-3">
                  <span 
-                    className="text-green-500 bg-slate-300 bg-opacity-10 w-6 h-6 rounded flex items-center justify-center">
-                        {ListItem.img}</span>{ListItem.title}
+                    className="text-green-500 bg-slate-300 bg-opacity-10 w-7 h-7 rounded flex items-center justify-center">
+                        <i className={ListItem.img} aria-hidden="true"></i></span>{ListItem.title}
               </li>)
             )}
         </ul>
@@ -50,8 +49,8 @@ export default function Sidebar() {
             {ListItemsUIFeatures.map((ListItem)=> 
              (<li key={ListItem.title} className="m-2 mt-4 text-base xl:text-xl flex items-center gap-3">
                  <span 
-                    className="text-green-500 bg-slate-300 bg-opacity-10 w-6 h-6 rounded flex items-center justify-center">
-                        {ListItem.img}</span>{ListItem.title}
+                    className="text-green-500 bg-slate-300 bg-opacity-10 w-7 h-7 rounded flex items-center justify-center">
+                        <i className={ListItem.img} aria-hidden="true"></i></span>{ListItem.title}
               </li>)
             )}
         </ul>
@@ -60,8 +59,8 @@ export default function Sidebar() {
             {ListItemsDataRepresentaion.map((ListItem)=> 
              (<li key={ListItem.title} className="m-2 mt-4 text-base xl:text-xl flex items-center gap-3">
                  <span 
-                    className="text-green-500 bg-slate-300 bg-opacity-10 w-6 h-6 rounded flex items-center justify-center">
-                        {ListItem.img}</span>{ListItem.title}
+                    className="text-green-500 bg-slate-300 bg-opacity-10 w-7 h-7 rounded flex items-center justify-center">
+                        <i className={ListItem.img} aria-hidden="true"></i></span>{ListItem.title}
               </li>)
             )}
         </ul>
@@ -70,7 +69,7 @@ export default function Sidebar() {
             {ListItemsEditors.map((ListItem)=> 
              (<li key={ListItem.title} className="m-2 mt-4 text-base xl:text-xl flex items-center gap-3">
                  <span 
-                    className="text-green-500 bg-slate-300 bg-opacity-10 w-6 h-6 rounded flex items-center justify-center">
+                    className="text-green-500 bg-slate-300 bg-opacity-10 w-7 h-7 rounded flex items-center justify-center">
                         {ListItem.img}</span>{ListItem.title}
               </li>)
             )}

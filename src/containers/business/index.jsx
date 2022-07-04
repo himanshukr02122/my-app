@@ -27,7 +27,7 @@ export default class Business extends Component {
                 <BusinessChild card_heading="Followers" card_val="4250k" card_icon={[<i className="fa-solid fa-eye fa-xl"></i>]} status="Decreased since yesterday" status_val="25%" />
               </div>
               
-              <div className="bg-slate-800 text-white pb-4">
+              <div className="bg-gray-800 text-white pb-4">
                 <div className="my-6 mb-3 flex items-center justify-between">
                   <p className="p-8 pb-2 font-medium 2xl:text-xl 2xl:font-bold">Recent Activity</p>
                   <img src={Kebab_Icon} alt="" className=" w-4 mr-8 mt-10" />
@@ -51,7 +51,7 @@ export default class Business extends Component {
                 </div>
                 <div className="flex justify-between mx-8 mt-4 xl:mt-6">
                   <span className="text-lg xl:text-xl font-bold text-white">$ 92556</span>
-                  <span className="text-sm xl:text-lg font-medium mt-2"><i className="far fa-dot-circle fa-sm fa-fw text-purple-800 mx-1"></i> Demand
+                  <span className="text-sm xl:text-lg font-medium mt-2"><i className="far fa-dot-circle fa-sm fa-fw text-blue mx-1"></i> Demand
                   <i className="far fa-dot-circle fa-sm fa-fw text-pink-500 mx-1"></i> Supply
                   </span>
                 </div>
