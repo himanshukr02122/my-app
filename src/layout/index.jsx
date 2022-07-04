@@ -9,9 +9,14 @@ const Layout=({children})=> {
       <>
 
         <Header />
-        <main className="flex h-full">
-          <Sidebar />
-          {children}
+        <main>
+          <div className="w-full h-full flex items-start justify-between">
+            <Sidebar />
+            <div className="w-full overflow-hidden transition-all">
+              {children}
+            </div>
+          </div>
+          
         </main>
       </>
       

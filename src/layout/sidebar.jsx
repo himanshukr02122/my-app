@@ -32,8 +32,9 @@ const ListItemsEditors = [
 export default function Sidebar() {
   
     return (
+        
     <div 
-        className="overflow-auto border border-slate-800 no-scrollbar font-medium w-64 mt-14 pt-4 pl-2 lg:w-80 lg:pl-4 xl:pl-8 text-gray-400 bg-slate-800">
+        className="overflow-auto border border-slate-800 no-scrollbar font-medium w-64 h-[91vh] mt-[9vh] pt-4 pl-2 lg:w-80 lg:pl-4 xl:pl-8 text-gray-400 bg-slate-800">
         <h3 className="text-sm xl:text-base m-2">Main</h3>
         <ul className="my-3 mb-6">
             {ListItemsMain.map((ListItem)=> 
